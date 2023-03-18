@@ -36,7 +36,3 @@ Your application should now be running on `http://localhost:3000`. Open your bro
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a pull request or open an issue to report bugs or request features.
-
-## License
-
-This project is licensed under the MIT License. See [LICENSE](LICENSE) for more information.
