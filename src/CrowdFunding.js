@@ -80,11 +80,12 @@ const CrowdFunding = ({ signer, provider, contractAddress, contractABI }) => {
   };
 
   const displayCampaigns = () => {
-    return campaigns.map((campaign, index) => {
+    return campaigns.slice().reverse().map((campaign, index) => {
       return (
         <div key={index}>
           <h2>{campaign.title}</h2>
           <p>{campaign.description}</p>
+          {campaign.image && <img src={campaign.image} alt={campaign.title} />}
           <p>
             Amount collected: {formatEther(campaign.amountCollected)} /{" "}
             {formatEther(campaign.target)} ETH
